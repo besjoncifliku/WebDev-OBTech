@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OB Technology</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <script src="https://kit.fontawesome.com/8e71d0b45b.js" crossorigin="anonymous"></script>
+    <style> 
+        @media only screen and (max-width: 800px) {
+            body {
+                display: block;
+            }
+
+            .container{
+                display: block;
+                flex-wrap: nowrap;
+                
+            }
+            .serviceSection{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li class="submenu"  onmouseout="hamburgerOut();">
+                    <a href="#" id="submenu" onmouseover="hamburgerIn();">
+                        <i class="fas fa-bars"></i></a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="blog/home.php">Blog</a></li>
+                <li><a href="academy.php">Academy</a></li>
+                <li><a href="#">Home</a></li>
+                <li onmouseout="logoWhite();"><a href="#" id="logoHover" onmouseover="logoBlack();"><img src="images/logo_2.png" class = "logo" alt="Logo"></a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="shop.php">Shop</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li class="login"><a href="login.php"><span><i class="fas fa-sign-in-alt"></i></span>   Log In</a></li>
+            </ul>
+            <script>
+                function hamburgerIn(){
+                    document.getElementById('submenu').innerHTML = '<i class="fas fa-hamburger submenu"></i>'
+                }
+
+                function hamburgerOut(){
+                    document.getElementById('submenu').innerHTML = '<i class="fas fa-bars submenu"></i>'
+
+                }
+
+                function logoWhite(){
+                    document.getElementById('logoHover').innerHTML = '<img src="images/logo_2.png" class = "logo" alt="Logo">';
+                }
+
+                function logoBlack(){
+                    document.getElementById('logoHover').innerHTML = '<img src="images/logo_2Black.png" class = "logo" alt="Logo">';
+                }
+            </script>
+        </nav>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>New technology is here!</h1>
+            <p>The impact of technology in modern life is unmeasurable. <br>
+               we use technology in different ways.</p>
+            <a href="#" class="headerButtonBlack" id="black"><span><i class="fas fa-eye"></i></span> What's new?</a>
+            <a href="#" class="headerButtonWhite" id="white"> <span><i class="far fa-user-circle"></i></span> My Profile </a>
+            <p></p>
+          </div>
+    </section>
+
+    <section class="serviceSection">
+        <h1>One step to the future</h1>
+        <div class="container">
+            <div class="service-box">
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="./images/settings.png" alt="Settings">
+                    </div>
+                    <h2>Service&<br>Settings</h2>
+                    <p>Our company is in your service for every problem you might have.</p>
+                    <div class="service-button">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="./images/databases.png" alt="">
+                    </div>
+                    <h2>Database Management<br>System</h2>
+                    <p>Managing all your database servers and systems.</p>
+                    <div class="service-button">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service">
+                    <div class="service-icon">
+                        <img src="./images/browser.png" alt="">
+                    </div>
+                    <h2>Web<br>Hosting</h2>
+                    <p>Hosting your website with low prices.</p>
+                    <div class="service-button">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-advertisement">
+        <div class="container-advertisement">
+            <div class="email-field-box">
+                <input class="email-txt" classtype="text" name="email-field" placeholder="Enter your email">
+                <a href="#" class="email-btn">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <h2>Subscribe</h2>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-google"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-yahoo"></i></a>
+                <h1 class="social-media-contact">VISIT US</h1>
+             </div>
+        </div>
+    </section>
+    <footer>
+        <p>OBTechnology, Copyright &copy 2020</p>
+    </footer>
+</body>
+</html>
