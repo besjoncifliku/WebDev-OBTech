@@ -1,0 +1,74 @@
+.form{
+    width: 50%;
+    position: relative;
+    height: 65px;
+    /* To hide the blue border of label:after */
+    overflow: hidden;
+    background-color: #111;
+}
+
+.form input{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #111;
+    padding-top: 17px;
+    border: none;
+    outline: none;
+}
+
+.form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 3px solid #fff;
+}
+
+.form label::after{
+    /* Label border */
+    content: "";
+    /* Just additional style not additional content */
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    /* To overlap the borders */
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.input-content{
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    font-family: sans-serif;
+    letter-spacing: 7px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .input-content, 
+.form input:valid + .label-name .input-content{
+    transform: translateY(-150%);
+    font-size-adjust: 14px;
+    color: #5fa8d3;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+
+.form .input-content i{
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 1px;
+}

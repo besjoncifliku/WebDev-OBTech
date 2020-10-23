@@ -1,0 +1,344 @@
+body{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .showcase p{
+    letter-spacing: 2px;
+    text-transform: none;
+    color: #5c5c5c;
+    line-height: 20pt;
+    font-family: sans-serif;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  
+  .container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .showcase {
+    min-height: 790px;
+    /* background-color: black; */
+    background: url("../images/home_cover_2.jpg") no-repeat center;
+    /* background-image: url("images/home_cover_1.jpg"); */
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color: #fff;
+  }
+
+  .showcase h1{
+    margin-top: 150px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .showcase p{
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .showcase a{
+    text-decoration: none;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  .showcase a i{
+    font-size: 20px;
+  }
+
+  .showcase a.headerButtonWhite{
+    border: 2px solid #fff;
+    color: #111;
+    background-color: #fff;
+    transition: all 0.4s ease;
+  }
+
+  .showcase a.headerButtonWhite:hover{
+    border: 2px solid #111;
+    color: #fff;
+    background-color: #111;
+  }
+
+  .showcase a.headerButtonBlack{
+    border: 2px solid #111;
+    background-color:  #111;
+    transition: all 0.3s ease;
+  }
+
+  .showcase a.headerButtonBlack:hover{
+    border: 2px solid #fff;
+    background-color:  #fff;
+    color: #111;
+  }
+
+
+  /* Index page services */
+
+
+  .serviceSection{
+    margin-top: -45px;
+    text-align: center;
+    /* background-image: url("../images/web_hosting_background.jpg"); */
+    background-color: #161616;
+  }
+
+  .serviceSection h1{
+    
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .serviceSection img{
+    margin-bottom: 5px;
+  }
+  
+  .serviceSection p{
+    margin-bottom: 10px;
+    color: #5c5c5c;
+    line-height: 15pt;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 120px;
+  }
+  
+  .serviceSection .container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .serviceSection h2{
+    margin-bottom: 10px;
+    line-height: 20pt;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: sans-serif;
+    height: 80px;
+  }
+
+  .serviceSection .service-box{
+    text-align: center;
+    width: 25%;
+    height: 410px;
+    padding: 25px;
+    display: block;
+    color: #82ccdd;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+    background: url('../images/web_hosting_background.gif');
+
+  }
+  
+  .serviceSection .service-icon{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #64cbe2;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 50px;
+    transition: 0.3s linear;
+  }
+
+  .serviceSection .service-icon img{
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+    padding: 20px;
+  }
+  
+  .serviceSection .service-box:hover .service-icon{
+    background: #82ccdd ;
+  }
+
+  .serviceSection .service-box:hover a{
+    background: #82ccdd ;
+    color: #111;
+    visibility: visible;
+  }
+
+  .serviceSection .service-box a{
+    text-decoration: none;
+    color: #82ccdd;
+    margin-top: 15px;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 15px;
+    border: 1px solid #82ccdd;
+    transition: 0.4s;
+    visibility: hidden;
+  }
+
+
+  .home-advertisement {
+    min-height: 900px;
+    /* background-color: black; */
+    background: url("../images/home_adv_1.jpg") no-repeat center;
+    /* background-image: url("images/home_cover_1.jpg"); */
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    
+  }
+
+  .home-advertisement .social-media a{
+    font-size: 50px;
+    color: #32a0c2;
+    transition: 0.4s;
+    margin: 15px;
+  }
+
+  .home-advertisement .social-media a:hover{
+    color: #fff;
+    font-size: 60px;
+  }
+
+  .home-advertisement .social-media h1{
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 20pt;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: sans-serif;
+    height: 80px;
+  }
+
+  .home-advertisement .email-field-box{
+      transform: translate(-50%, -50%);
+      background: #161616;
+      height: 60px;
+      border-radius: 60px;
+      padding: 10px;
+      transition: 0.4s;
+  }
+
+
+  .home-advertisement .email-field-box:hover .email-txt{
+      width: 240px;
+      padding: 0 6px;
+      color: #fff;
+  }
+
+  .home-advertisement .email-field-box:hover .email-btn{
+    background-color: #161616;
+    color: #32a0c2;
+}
+
+.home-advertisement .email-field-box:hover{
+    background-color: #32a0c2;
+}
+
+.home-advertisement .email-btn{
+    color: #161616;
+    float: right;
+    width: 60px;
+    height: 60px;
+    font-size: 34px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #32a0c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-advertisement .email-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+.email-field-box{
+    position: absolute;
+    top: 10%;
+    right: 7%;
+}
+
+.home-advertisement h2{
+    margin-bottom: 10px;
+    line-height: 20pt;
+    font-family: sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: sans-serif;
+    height: 80px;
+    color: #161616;
+
+}
+
+ /* Footer */
+ footer{
+    padding: 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #32a0c2;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+
+  /* Small Screen */
+@media(max-width: 900px){
+    header #branding,
+    header nav,
+    header nav li,
+    .showcase h1,
+    .author-section .author{
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+}  

@@ -1,0 +1,86 @@
+body{
+    background-image: url('../images/academyCover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cimage{
+    width: 75;
+    height:75px;
+    margin: auto;
+}
+
+
+.courses{
+    width:40%; 
+    /* column-count:2; */
+    cursor: pointer;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+	color: #111;
+	text-align: center;
+    text-transform: uppercase;
+    transition: 0.4s;
+    background-color: transparent;
+}
+
+.kursi{
+    color: #111;
+    transition: 0.4s;
+    margin-bottom: 50px;
+    background-color: #c63339;
+}
+
+
+.kursi:hover{
+    background-color: #111;
+    color: #32a0c2;
+}
+
+.courses-display{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* .container-course{
+    margin-left:3%;
+    border: 1px solid lightblue;
+    width:30%;
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.course-description span{ 
+    color: #32a0c2;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    font-size: 12px;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.courses_right{
+    margin-left:100px;
+    width: 50%;
+}
+
+.buy{
+    margin-top:10px; background-color:green; border-radius:5px; width:100px; height:25px;
+}
+
+.bought-course{
+    border-style:solid;
+    border-width:3px;
+    border-color: lightgreen;
+    color: #32a0c2;
+}
+
+

@@ -1,0 +1,24 @@
+.cimage{
+    width:20px;
+    height:20px;
+    margin-left:50px;
+
+}
+
+.courses{
+    width:30%;
+    column-count:2;
+}
+/* .container-course{
+    margin-left:3%;
+    border: 1px solid lightblue;
+    width:30%;
+} */
+
+.container{
+    display: flex;
+}
+
+.courses_right{
+    margin-left:280px;
+}
