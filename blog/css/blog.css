@@ -1,0 +1,71 @@
+.postimi{
+    width:50%;
+    margin-left:25%;
+    border: 3px solid rgb(46, 77, 177);
+    border-radius: 60px;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.postimi:hover{
+    background-color:white;
+    color:#111;
+
+}
+
+.view_button{
+    border-radius: 20px;
+    
+}
+
+.view_button:hover,#shto_kom:hover{
+    background-color:black;
+    color:white;
+}
+
+
+#comment{
+    margin-top:10px; margin-bottom:10px;
+    width:50%;
+    height:100px;
+    
+}
+
+.user_comment{
+    background-color:rgb(21, 151, 108);
+    width:25%;
+    color:white;
+    justify-content: space-around;
+    margin-right:10px;
+    margin-bottom:10px;
+    text-align:center;
+    margin-left:15%;
+    border-radius: 30px;
+
+}
+.user_comment:hover{
+    background-color:white;
+    color:black;
+    border: 3px solid #e43838;
+    width:25.01%;
+    height:100px;
+    margin-bottom:5px;
+}
+
+.comments{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#comment_form{
+    margin-left:20%;
+    position:relative;
+}
+
+.add_button{
+    border-radius:20px;
+    width:50px;
+    height:20px;
+}
