@@ -20,9 +20,13 @@ include_once('dbh.inc.php');
                     header('Location: ../login.php?signup=invalidemail');
                 }
                 else {
-                    $user_check_query = "SELECT * FROM users WHERE username='$uname' OR email='$email' LIMIT 1";
-                    $result = mysqli_query($conn, $user_check_query);
-                    $user = mysqli_fetch_assoc($result);
+                 
+                    $user_check_query = "SELECT * FROM users WHERE username=? OR email=? LIMIT 1";
+                    $stmt = $conn->prepare($user_check_query); 
+                    $stmt->bind_param("ss", $uname, $email);
+                    $stmt->execute();
+                    $result = $stmt->get_result(); // get the mysqli result
+                    $user = $result->fetch_assoc(); // fetch data 
 
                     if ($user) { // if user exists
                         //check username if it is unique
